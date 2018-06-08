@@ -20,7 +20,7 @@ public class DressObject extends AbstractCostume{
     }
 
     @Override
-    public String putOn(){
-        return String.format("[드레스] [%s] - [%s] 색상을 입히겠습니다.", this.name, this.color);
+    public void putOn(){
+        System.out.println(String.format("[드레스] [%s] - [%s] 색상을 입히겠습니다.", this.name, this.color));
     }
 }

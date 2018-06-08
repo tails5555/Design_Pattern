@@ -20,7 +20,7 @@ public class HatObject extends AbstractCostume{
     }
 
     @Override
-    public String putOn(){
-        return String.format("[모자] [%s] - [%s] 색상을 씌우겠습니다.", this.name, this.color);
+    public void putOn(){
+        System.out.println(String.format("[모자] [%s] - [%s] 색상을 씌우겠습니다.", this.name, this.color));
     }
 }
