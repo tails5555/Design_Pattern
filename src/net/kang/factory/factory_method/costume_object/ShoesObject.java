@@ -1,6 +1,8 @@
-package net.kang.factory.factory_method.costume;
+package net.kang.factory.factory_method.costume_object;
 
-public class ShoesObject extends AbstractCostume{
+import net.kang.factory.factory_method.abstract_object.AbstractCostume;
+
+public class ShoesObject extends AbstractCostume {
     private String name;
     private String color;
 

@@ -1,4 +1,4 @@
-package net.kang.factory.factory_method.costume;
+package net.kang.factory.factory_method.costume_object;
 
 public enum CostumeType {
     DRESS, SHIRT, PANTS, SHOES, HAT

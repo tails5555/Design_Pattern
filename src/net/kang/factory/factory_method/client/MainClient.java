@@ -1,9 +1,9 @@
 package net.kang.factory.factory_method.client;
 
-import net.kang.factory.factory_method.costume.AbstractCostume;
-import net.kang.factory.factory_method.factory.TypeCostumeFactory;
+import net.kang.factory.factory_method.abstract_object.AbstractCostume;
+import net.kang.factory.factory_method.factory_object.TypeCostumeFactory;
 
-import static net.kang.factory.factory_method.costume.CostumeType.*;
+import static net.kang.factory.factory_method.costume_object.CostumeType.*;
 
 public class MainClient {
     public static void main(String[] args){

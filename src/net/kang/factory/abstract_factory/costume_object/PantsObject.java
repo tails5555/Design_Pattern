@@ -1,4 +1,6 @@
-package net.kang.factory.factory_method.costume;
+package net.kang.factory.abstract_factory.costume_object;
+
+import net.kang.factory.abstract_factory.abstract_object.AbstractCostume;
 
 public class PantsObject extends AbstractCostume {
     private String name;

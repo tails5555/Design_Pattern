@@ -1,14 +1,14 @@
-package net.kang.factory.factory_method.factory;
+package net.kang.factory.factory_method.factory_object;
 
-import net.kang.factory.factory_method.costume.AbstractCostume;
+import net.kang.factory.factory_method.abstract_object.AbstractCostume;
 
-import net.kang.factory.factory_method.costume.CostumeObject;
-import net.kang.factory.factory_method.costume.CostumeType;
-import net.kang.factory.factory_method.costume.DressObject;
-import net.kang.factory.factory_method.costume.HatObject;
-import net.kang.factory.factory_method.costume.PantsObject;
-import net.kang.factory.factory_method.costume.ShirtObject;
-import net.kang.factory.factory_method.costume.ShoesObject;
+import net.kang.factory.factory_method.costume_object.CostumeObject;
+import net.kang.factory.factory_method.costume_object.CostumeType;
+import net.kang.factory.factory_method.costume_object.DressObject;
+import net.kang.factory.factory_method.costume_object.HatObject;
+import net.kang.factory.factory_method.costume_object.PantsObject;
+import net.kang.factory.factory_method.costume_object.ShirtObject;
+import net.kang.factory.factory_method.costume_object.ShoesObject;
 
 public class TypeCostumeFactory extends CostumeFactory{
 

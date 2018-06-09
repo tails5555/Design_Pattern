@@ -1,4 +1,4 @@
-package net.kang.factory.factory_method.costume;
+package net.kang.factory.abstract_factory.abstract_object;
 
 public abstract class AbstractCostume {
     public abstract void putOn();
