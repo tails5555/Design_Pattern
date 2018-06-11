@@ -7,6 +7,7 @@ public abstract class AccentSingLive {
     protected AccentSingLive(SingLive singLive){
         this.singLive = singLive;
     }
+    public abstract void generalLive(String greeting, String lyrics);
     public abstract void changeGenre(String genre);
     public abstract void noBgmSinging(String lyrics);
 }

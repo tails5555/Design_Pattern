@@ -9,10 +9,10 @@ public class GeneralMaleSinger implements SingLive {
     }
     @Override
     public void sayHello(String greeting){
-        System.out.printf("<일반 남자 가수 인사> [%s] %s\n", name, greeting);
+        System.out.printf("<남자 가수 인사> [%s] %s\n", name, greeting);
     }
     @Override
     public void singing(String lyrics){
-        System.out.printf("<일반 남자 가수 라이브> [%s] %s\n", name, lyrics);
+        System.out.printf("<남자 가수 라이브> [%s] %s\n", name, lyrics);
     }
 }
