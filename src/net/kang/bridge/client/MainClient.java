@@ -15,7 +15,7 @@ public class MainClient {
         maleSinger.sayHello("안녕하세요? 힙합을 잘 하는 가수A 입니다.");
         maleSinger.singing("췍, 요우, 췍. 암더 코리안, 탑 클래스 힙합 모범 쀄브러스~");
         femaleSinger.sayHello("음악을 좋아하는 가수 B입니다.");
-        femaleSinger.sayHello("날 울리지 마요~ 날 사랑해 줘요~");
+        femaleSinger.singing("날 울리지 마요~ 날 사랑해 줘요~");
 
         System.out.println("[독창 가수 라이브]");
         AccentSingLive accentMaleSinger = new AccentMaleSinger(maleSinger, "갑자기 억양 살린 가수A");
