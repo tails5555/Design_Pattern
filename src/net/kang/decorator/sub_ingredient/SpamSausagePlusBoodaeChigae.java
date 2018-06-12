@@ -1,5 +1,6 @@
 package net.kang.decorator.sub_ingredient;
 
+import net.kang.decorator.enumeration.MenuPrice;
 import net.kang.decorator.main_cooking.BoodaeChigae;
 
 public class SpamSausagePlusBoodaeChigae extends ChigaeDecorator {
@@ -7,17 +8,18 @@ public class SpamSausagePlusBoodaeChigae extends ChigaeDecorator {
     private int quantity;
 
     public SpamSausagePlusBoodaeChigae(BoodaeChigae boodaeChigae, int quantity){
+        super();
         this.boodaeChigae = boodaeChigae;
         this.quantity = quantity;
     }
 
     @Override
-    public void brothInformation(){
-        this.boodaeChigae.brothInformation();
+    public String getDescription(){
+        return String.format("%s, 부대고기 %d인분 추가", boodaeChigae.getDescription(), this.quantity);
     }
 
     @Override
-    public void addIngredientInfo(){
-        System.out.printf("%s 육수 부대찌개에 스팜/소시지 %d인분 추가\n", this.boodaeChigae.getBrothType(), this.quantity);
+    public int cost(){
+        return boodaeChigae.cost() + MenuPrice.SPAM_SAUSAGE.getValue() * this.quantity;
     }
 }
