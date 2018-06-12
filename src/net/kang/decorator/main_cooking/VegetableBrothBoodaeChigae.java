@@ -4,8 +4,9 @@ package net.kang.decorator.main_cooking;
 public class VegetableBrothBoodaeChigae extends BoodaeChigae{
     private int person;
     public VegetableBrothBoodaeChigae(int person){
-        super("야채");
         this.person = person;
+        this.setBrothType("야채");
+        System.out.printf("[주문] 야채 육수 부대찌개 %d인분 주문했습니다.\n", person);
     }
     @Override
     public void brothInformation(){
