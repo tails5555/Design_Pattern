@@ -1,8 +1,7 @@
-package net.kang.proxy.proxy;
+package net.kang.proxy.subject;
 
 import net.kang.proxy.dto.Document;
 import net.kang.proxy.enumeration.Suffix;
-import net.kang.proxy.subject.StoredDocument;
 
 public class RealStoredDocument implements StoredDocument {
     private String id;
@@ -10,7 +9,7 @@ public class RealStoredDocument implements StoredDocument {
 
     public RealStoredDocument(String id, String title, Suffix suffix, int bytes){
         this.id = id;
-        System.out.printf("[%s - 단일 파일 저장소를 형성하였습니다.]\n", id);
+        System.out.printf("[%s - 단일 파일 저장소를 생성하였습니다.]\n", id);
         this.document = new Document(title, suffix, bytes);
         this.uploading();
     }
@@ -30,7 +29,7 @@ public class RealStoredDocument implements StoredDocument {
         String tmpFileName = String.format("%s.%s", this.document.getTitle(), this.document.getSuffix().toString().toLowerCase());
         System.out.printf("[%s - 파일 삭제 정보] 단일 파일 저장소에 %s 삭제가 시작됩니다.\n", this.id, tmpFileName);
         try {
-            Thread.sleep(this.document.getBytes()); // 1MB를 1000Byte로 가정하고, 1MB 당 1초씩 업로딩 된다고 치자.
+            Thread.sleep(this.document.getBytes() / 5); // 1MB를 1000Byte로 가정하고, 5MB 당 1초씩 삭제 된다고 치자.
         } catch(InterruptedException e) {
             e.printStackTrace();
         }
