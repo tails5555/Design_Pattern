@@ -1,6 +1,9 @@
-package net.kang.adapter;
+package net.kang.adapter.bus_card_adapter;
 
-public class BeeBusCardAdapter implements TeaBusCard{
+import net.kang.adapter.bus_card_interface.BeeBusCard;
+import net.kang.adapter.bus_card_interface.TeaBusCard;
+
+public class BeeBusCardAdapter implements TeaBusCard {
     BeeBusCard beeBusCard;
 
     public BeeBusCardAdapter(BeeBusCard beeBusCard){

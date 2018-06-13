@@ -1,4 +1,9 @@
-package net.kang.adapter;
+package net.kang.adapter.client;
+
+import net.kang.adapter.bus_card_adapter.BeeBusCardAdapter;
+import net.kang.adapter.bus_card_interface.TeaBusCard;
+import net.kang.adapter.bus_device.MetropolitanBusDevice;
+import net.kang.adapter.bus_device.SecondaryBusDevice;
 
 public class MainClient {
     public static void main(String[] args){

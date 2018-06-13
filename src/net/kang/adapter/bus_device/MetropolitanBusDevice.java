@@ -1,4 +1,6 @@
-package net.kang.adapter;
+package net.kang.adapter.bus_device;
+
+import net.kang.adapter.bus_card_interface.TeaBusCard;
 
 public class MetropolitanBusDevice implements TeaBusCard {
     @Override
