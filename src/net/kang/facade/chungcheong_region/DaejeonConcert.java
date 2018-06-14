@@ -1,4 +1,4 @@
-package net.kang.facade.region_concert;
+package net.kang.facade.chungcheong_region;
 
 public class DaejeonConcert {
     private String title;

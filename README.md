@@ -1,6 +1,6 @@
 # Object Oriented Design Pattern Examples
 
-객체 지향 패턴을 공부하기 위한 목적으로 작성한 Repository입니다.
+객체 지향 패턴을 공부하기 위한 목적으로 작성한 Repository 입니다.
 
 각 패턴에 대해서 계속 공부하면서 본인이 작성한 예제를 추가하는 방식으로 공부하고 있습니다.
 
@@ -18,4 +18,4 @@
 
 6. Decorator Pattern with 부대찌개
 
-## 
+7. Facade Pattern with 콘서트
