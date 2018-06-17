@@ -19,3 +19,5 @@
 6. Decorator Pattern with 부대찌개
 
 7. Facade Pattern with 콘서트
+
+8. Observer Pattern with 지하철
