@@ -10,23 +10,23 @@ import java.util.List;
 public class LineSubjectObject implements LineSubject {
     private String lineName;
     private SubwayStatus status;
-    private List<SubwayObserver> subjectList;
+    private List<SubwayObserver> subwayList;
 
     public LineSubjectObject(String lineName){
         this.lineName = lineName;
         this.status = null;
-        subjectList = new ArrayList<SubwayObserver>();
+        subwayList = new ArrayList<SubwayObserver>();
     }
 
     @Override
     public void add(SubwayObserver so) {
-        this.subjectList.add(so);
+        this.subwayList.add(so);
     }
 
     @Override
     public void remove(SubwayObserver so) {
-        if(this.subjectList.contains(so)){
-            this.subjectList.remove(so);
+        if(this.subwayList.contains(so)){
+            this.subwayList.remove(so);
         }
     }
 
@@ -43,13 +43,13 @@ public class LineSubjectObject implements LineSubject {
     }
 
     public void statusInfoPrint(){
-        for(SubwayObserver so : this.subjectList){
+        for(SubwayObserver so : this.subwayList){
             System.out.println(so.statusCount(this.status));
         }
     }
 
     public void statusChangePrint(int person){
-        for(SubwayObserver so : this.subjectList){
+        for(SubwayObserver so : this.subwayList){
             System.out.println(so.statusChange(this.status, person));
         }
     }

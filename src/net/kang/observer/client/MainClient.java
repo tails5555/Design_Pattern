@@ -20,6 +20,8 @@ public class MainClient {
         SubwayObserver m214 = new BatchSubwayObject(metro2, "강변역", false);
         SubwayObserver m216 = new GeneralSubwayObject(metro2, "잠실역", true);
         SubwayObserver m218 = new BatchSubwayObject(metro2, "종합운동장역", true);
+        SubwayObserver m220 = new BatchSubwayObject(metro2, "선릉역", true);
+        SubwayObserver m222 = new GeneralSubwayObject(metro2, "강남역", true);
 
         System.out.println("[2호선 1000명 승차]");
         metro2.setStatusChange(RIDE, 1000);

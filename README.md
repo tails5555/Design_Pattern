@@ -20,4 +20,6 @@
 
 7. Facade Pattern with 콘서트
 
-8. Observer Pattern with 지하철
+8. Observer Pattern with 지하철, 뉴스 시청
+
+9. Strategy Pattern with 야인시대
